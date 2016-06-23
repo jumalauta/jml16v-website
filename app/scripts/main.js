@@ -1,5 +1,5 @@
 (function () {
-  console.log('Jumalauta Sweet Sixteen');
+  console.log('Jumalauta Sweet Sixteen'); // eslint-disable-line no-console
   var kb = '';
   var palette = [];
   var canvas, context, indices, data;
