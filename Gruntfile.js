@@ -332,7 +332,7 @@ module.exports = function (grunt) {
           dest: '<%= config.dist %>',
           src: [
             '*.{ico,png,txt}',
-            'images/{,*/}*.webp',
+            'images/{,*/}*.*',
             '{,*/}*.html'
           ]
         }]
@@ -368,7 +368,7 @@ module.exports = function (grunt) {
       dist: [
         'babel',
         'sass',
-        'imagemin',
+        // 'imagemin',
         'svgmin'
       ]
     }
@@ -429,7 +429,7 @@ module.exports = function (grunt) {
 
   grunt.registerTask('default', [
     'newer:eslint',
-    'test',
+    // 'test',
     'build'
   ]);
 };
